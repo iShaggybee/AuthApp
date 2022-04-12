@@ -8,36 +8,35 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBOutlet var userNameField: UITextField!
+    @IBOutlet var loginField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
-    private let userName = "User"
-    private let password = "Password"
+    private let user = User.getUserInfo()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
 
-        welcomeVC.userName = userName
+        welcomeVC.person = user.person
     }
 
     @IBAction func onLogin() {
-        if userNameField.text != userName || passwordField.text != password {
+        if loginField.text != user.login || passwordField.text != user.password {
             showMessage(title: "Login or Password is wrong!", message: "Please re-enter data ")
 
             passwordField.text = ""
         }
     }
     
-    @IBAction func onRemindUserName() {
-        showMessage(title: "Remind", message: "Your user name is User")
+    @IBAction func onRemindLogin() {
+        showMessage(title: "Remind", message: "Your login is \(user.login)")
     }
     
     @IBAction func onRemindPassword() {
-        showMessage(title: "Remind", message: "Your password is Password")
+        showMessage(title: "Remind", message: "Your password is \(user.password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        userNameField.text = ""
+        loginField.text = ""
         passwordField.text = ""
     }
     
@@ -57,7 +56,7 @@ extension LoginViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameField {
+        if textField == loginField {
             passwordField.becomeFirstResponder()
         } else {
             onLogin()

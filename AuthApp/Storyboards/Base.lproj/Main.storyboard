@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-AH-vl7">
                                 <rect key="frame" x="60" y="213" width="294" height="170"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Tp-b6-SOQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Tp-b6-SOQ">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
@@ -62,13 +62,13 @@
                                 <rect key="frame" x="60" y="413" width="294" height="58"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-RL-poh">
-                                        <rect key="frame" x="105" y="0.0" width="84" height="29"/>
+                                        <rect key="frame" x="102.5" y="0.0" width="89" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Forgot User?">
+                                        <state key="normal" title="Forgot Login?">
                                             <color key="titleColor" red="0.14117647058823529" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onRemindUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="amr-oi-gYf"/>
+                                            <action selector="onRemindLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="i8H-nG-AYy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB8-cU-4nQ">
@@ -98,8 +98,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginField" destination="1Tp-b6-SOQ" id="Php-CF-3c5"/>
                         <outlet property="passwordField" destination="HXX-l2-0hn" id="8ql-di-Fkd"/>
-                        <outlet property="userNameField" destination="1Tp-b6-SOQ" id="FMB-N9-S68"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
