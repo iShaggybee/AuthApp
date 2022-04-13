@@ -14,9 +14,17 @@ class LoginViewController: UIViewController {
     private let user = User.getUserInfo()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-
-        welcomeVC.person = user.person
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        
+        for viewController in tabBarController.viewControllers ?? [] {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.person = user.person
+            } else if let navigationVC = viewController as? UINavigationController {
+                let generalInfoVC = navigationVC.topViewController as! GeneralInfoViewController
+                
+                generalInfoVC.person = user.person
+            }
+        }
     }
 
     @IBAction func onLogin() {
