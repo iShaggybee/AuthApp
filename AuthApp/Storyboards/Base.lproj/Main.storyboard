@@ -380,7 +380,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-6s-BZG">
-                                <rect key="frame" x="46.5" y="213.5" width="227.5" height="141.5"/>
+                                <rect key="frame" x="46.5" y="82" width="227.5" height="141.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Login and Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNg-6E-TBC">
                                         <rect key="frame" x="0.0" y="0.0" width="227.5" height="21.5"/>
@@ -401,7 +401,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRp-w5-X5u">
-                                <rect key="frame" x="143" y="376" width="34" height="30"/>
+                                <rect key="frame" x="143" y="244.5" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="onChangeAccount" destination="Mow-kL-n8J" eventType="touchUpInside" id="P5Q-AH-dO6"/>
@@ -411,7 +411,7 @@
                         <viewLayoutGuide key="safeArea" id="Rlg-zR-tqo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JTl-6s-BZG" firstAttribute="centerY" secondItem="Q7m-0S-nkA" secondAttribute="centerY" id="9F8-l8-CIj"/>
+                            <constraint firstItem="JTl-6s-BZG" firstAttribute="top" secondItem="Rlg-zR-tqo" secondAttribute="top" constant="82" id="QcM-m4-dQ8"/>
                             <constraint firstItem="JTl-6s-BZG" firstAttribute="centerX" secondItem="Q7m-0S-nkA" secondAttribute="centerX" id="jpE-x1-XZK"/>
                             <constraint firstItem="PRp-w5-X5u" firstAttribute="centerX" secondItem="Q7m-0S-nkA" secondAttribute="centerX" id="pwK-jR-w38"/>
                             <constraint firstItem="PRp-w5-X5u" firstAttribute="top" secondItem="er7-Jl-pX0" secondAttribute="bottom" constant="21" id="wMY-rr-d4A"/>
