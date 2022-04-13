@@ -5,10 +5,16 @@
 //  Created by Kislov Vadim on 12.04.2022.
 //
 
-struct User {
-    let login: String
-    let password: String
+class User {
+    var login: String
+    var password: String
     let person: Person
+    
+    init(login: String, password: String, person: Person) {
+        self.login = login
+        self.password = password
+        self.person = person
+    }
     
     static func getUserInfo() -> User {
         User.init(
@@ -32,7 +38,7 @@ struct User {
                     "the ability to find the essence of the problem and solve it"
                 ],
                 note: """
-                Since 2012, thoughts about iOS development have been haunting. For a number of reasons, it was not possible to do it fully. And now 10 years have passed ... During this time, the desire has not disappeared, but only intensified. I found the place to help me move in this direction, Thanks Swiftbook!
+                Since 2012, thoughts about iOS development have haunted me. For a number of reasons, the realization of the desire was delayed. And now 10 years have passed ... During this time, the desire has not disappeared, but only intensified. I found a place to help me move in this direction, thanks to Swiftbook!
                 """
             )
         )

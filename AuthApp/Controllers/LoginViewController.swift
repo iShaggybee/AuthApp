@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
-    private let user = User.getUserInfo()
+    private var user = User.getUserInfo()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
         for viewController in tabBarController.viewControllers ?? [] {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.person = user.person
+            } else if let settingsVC = viewController as? SettingsViewController {
+                settingsVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
                 let generalInfoVC = navigationVC.topViewController as! GeneralInfoViewController
                 

@@ -18,6 +18,7 @@
 		63DB3DD72806A9EF00459873 /* GeneralInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB3DD62806A9EF00459873 /* GeneralInfoViewController.swift */; };
 		63DB3DD92806F17000459873 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB3DD82806F17000459873 /* NoteViewController.swift */; };
 		63DB3DDB2806F2BB00459873 /* AdditionalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB3DDA2806F2BB00459873 /* AdditionalInfoViewController.swift */; };
+		63DB3DDD2807086D00459873 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB3DDC2807086D00459873 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		63DB3DD62806A9EF00459873 /* GeneralInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfoViewController.swift; sourceTree = "<group>"; };
 		63DB3DD82806F17000459873 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		63DB3DDA2806F2BB00459873 /* AdditionalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoViewController.swift; sourceTree = "<group>"; };
+		63DB3DDC2807086D00459873 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				63DB3DD62806A9EF00459873 /* GeneralInfoViewController.swift */,
 				63DB3DD82806F17000459873 /* NoteViewController.swift */,
 				63DB3DDA2806F2BB00459873 /* AdditionalInfoViewController.swift */,
+				63DB3DDC2807086D00459873 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				63DB3DDB2806F2BB00459873 /* AdditionalInfoViewController.swift in Sources */,
 				63DB3DD12806131200459873 /* User.swift in Sources */,
 				63CA611727FF5DC900C7EDC0 /* SceneDelegate.swift in Sources */,
+				63DB3DDD2807086D00459873 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
